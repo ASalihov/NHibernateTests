@@ -20,7 +20,8 @@ namespace TestNhibernate
                 using (var transaction = session.BeginTransaction())
                 {
                     var DepartmentObject = new Department
-                    { Name = "IT", PhoneNumber = "962788700227" };
+                    { Name = "IT", PhoneNumber = "962788700227" }; 
+                    ///  www
                     session.Save(DepartmentObject);
                     transaction.Commit();
                     Console.WriteLine("Department Created: " + DepartmentObject.Name);
